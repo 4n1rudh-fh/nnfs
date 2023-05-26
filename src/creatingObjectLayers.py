@@ -24,7 +24,7 @@ def main():
             self.output = np.dot(inputs, self.weights) + self.biases
 
     layer_1 = LayerDense(4, 3)
-    layer_2 = LayerDense(3, 2)
+    layer_2 = LayerDense(3, 3)
 
     layer_1.forward(X)
     layer_2.forward(layer_1.output)
